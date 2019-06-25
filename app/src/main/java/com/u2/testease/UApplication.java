@@ -1,10 +1,10 @@
-package com.netease.testease;
+package com.u2.testease;
 
 import android.app.Application;
 import android.content.Context;
 import android.view.WindowManager;
 
-import com.netease.testease.handler.CrashHandler;
+import com.u2.testease.handler.CrashHandler;
 
 public class UApplication extends Application {
 

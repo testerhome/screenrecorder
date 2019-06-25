@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.netease.testease;
+package com.u2.testease;
 
 import android.media.MediaCodecInfo;
 import android.media.MediaCodecList;

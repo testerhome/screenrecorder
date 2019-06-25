@@ -1,4 +1,4 @@
-package com.netease.testease.view;
+package com.u2.testease.view;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -14,7 +14,7 @@ import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
 
-import com.netease.testease.R;
+import com.u2.testease.R;
 
 
 public class FloatView extends View {

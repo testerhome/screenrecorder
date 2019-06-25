@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.netease.testease;
+package com.u2.testease;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -28,8 +28,10 @@ import android.os.Build;
 import android.os.SystemClock;
 import android.text.format.DateUtils;
 
+import com.u2.testease.R;
+
 import static android.os.Build.VERSION_CODES.O;
-import static com.netease.testease.MainActivity.ACTION_STOP;
+import static com.u2.testease.MainActivity.ACTION_STOP;
 
 /**
  * @author yrom

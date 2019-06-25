@@ -1,4 +1,4 @@
-package com.netease.testease.util;
+package com.u2.testease.util;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;

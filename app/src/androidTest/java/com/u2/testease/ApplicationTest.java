@@ -1,4 +1,4 @@
-package com.netease.testease;
+package com.u2.testease;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

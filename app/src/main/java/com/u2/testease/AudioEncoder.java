@@ -14,24 +14,25 @@
  * limitations under the License.
  */
 
-package com.netease.testease;
+package com.u2.testease;
 
-import java.io.IOException;
+import android.media.MediaFormat;
 
 /**
  * @author yrom
- * @version 2017/12/4
+ * @version 2017/12/3
  */
-interface Encoder {
-    void prepare() throws IOException;
+class AudioEncoder extends BaseEncoder {
+    private final AudioEncodeConfig mConfig;
 
-    void stop();
-
-    void release();
-
-    void setCallback(Callback callback);
-
-    interface Callback {
-        void onError(Encoder encoder, Exception exception);
+    AudioEncoder(AudioEncodeConfig config) {
+        super(config.codecName);
+        this.mConfig = config;
     }
+
+    @Override
+    protected MediaFormat createMediaFormat() {
+        return mConfig.toFormat();
+    }
+
 }

@@ -1,4 +1,4 @@
-package com.netease.testease;
+package com.u2.testease;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -12,6 +12,8 @@ import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.widget.Toast;
+
+import com.u2.testease.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.netease.testease.view;
+package com.u2.testease.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -28,7 +28,7 @@ import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
-import com.netease.testease.R;
+import com.u2.testease.R;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.netease.testease.http;
+package com.u2.testease.http;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
@@ -7,7 +7,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.netease.testease.util.AppUtils;
+import com.u2.testease.util.AppUtils;
 
 import java.io.IOException;
 import java.io.InputStream;

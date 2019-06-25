@@ -1,10 +1,11 @@
-package com.netease.testease.handler;
+package com.u2.testease.handler;
 
 import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.netease.testease.util.AppUtils;
+import com.u2.testease.util.AppUtils;
+import com.u2.testease.UApplication;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -14,8 +15,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
-
-import static com.netease.testease.UApplication.getContext;
 
 public class CrashHandler implements Thread.UncaughtExceptionHandler {
     @Override
@@ -48,7 +47,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
     }
 
     private String logFilePath = Environment.getExternalStorageDirectory() + File.separator + "Android" +
-            File.separator + "data" + File.separator + AppUtils.getPackageName(getContext()) + File.separator + "crashLog";
+            File.separator + "data" + File.separator + AppUtils.getPackageName(UApplication.getContext()) + File.separator + "crashLog";
 
     private void saveThrowableMessage(String errorMessage) {
         if (TextUtils.isEmpty(errorMessage)) {

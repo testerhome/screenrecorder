@@ -1,4 +1,4 @@
-package com.netease.testease.handler;
+package com.u2.testease.handler;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -6,8 +6,8 @@ import android.os.Message;
 import android.util.Log;
 import android.view.View;
 
-import com.netease.testease.MainActivity;
-import com.netease.testease.view.FloatView;
+import com.u2.testease.MainActivity;
+import com.u2.testease.view.FloatView;
 
 public class CoorHandler extends Handler {
     private final String TAG = "Handler";

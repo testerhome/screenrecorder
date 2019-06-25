@@ -23,14 +23,14 @@
                 android:layout_height="wrap_content"
                 android:text="Video Encode Config (H.264 AVC)" />
 
-            <com.netease.testease.view.NamedSpinner
+            <com.u2.testease.view.NamedSpinner
                 android:id="@+id/video_codec"
                 android:name="Video Encoder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp" />
 
-            <com.netease.testease.view.NamedSpinner
+            <com.u2.testease.view.NamedSpinner
                 android:id="@+id/resolution"
                 android:name="Resolution"
                 android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
                 android:layout_marginTop="8dp"
                 android:entries="@array/video_resolutions" />
 
-            <com.netease.testease.view.NamedSpinner
+            <com.u2.testease.view.NamedSpinner
                 android:id="@+id/video_bitrate"
                 android:name="Bitrate (kbps)"
                 android:layout_width="wrap_content"
@@ -46,7 +46,7 @@
                 android:layout_marginTop="8dp"
                 android:entries="@array/video_bitrates" />
 
-            <com.netease.testease.view.NamedSpinner
+            <com.u2.testease.view.NamedSpinner
                 android:id="@+id/framerate"
                 android:name="Frame Rate (fps)"
                 android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
                 android:layout_marginTop="8dp"
                 android:entries="@array/video_framerates" />
 
-            <com.netease.testease.view.NamedSpinner
+            <com.u2.testease.view.NamedSpinner
                 android:id="@+id/iframe_interval"
                 android:name="I-Frame Interval"
                 android:layout_width="wrap_content"
@@ -64,14 +64,14 @@
                 android:layout_marginTop="8dp"
                 android:entries="@array/iframeintervals" />
 
-            <com.netease.testease.view.NamedSpinner
+            <com.u2.testease.view.NamedSpinner
                 android:id="@+id/avc_profile"
                 android:name="AVCProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp" />
 
-            <com.netease.testease.view.NamedSpinner
+            <com.u2.testease.view.NamedSpinner
                 android:id="@+id/orientation"
                 android:name="Orientation"
                 android:layout_width="wrap_content"
@@ -92,14 +92,14 @@
                     android:layout_height="wrap_content"
                     android:text="Audio Encode Config (H.264 AAC)" />
 
-                <com.netease.testease.view.NamedSpinner
+                <com.u2.testease.view.NamedSpinner
                     android:id="@+id/audio_codec"
                     android:name="Audio Encoder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp" />
 
-                <com.netease.testease.view.NamedSpinner
+                <com.u2.testease.view.NamedSpinner
                     android:id="@+id/audio_channel_count"
                     android:name="Channels"
                     android:layout_width="wrap_content"
@@ -107,21 +107,21 @@
                     android:layout_marginTop="8dp"
                     android:entries="@array/audio_channels" />
 
-                <com.netease.testease.view.NamedSpinner
+                <com.u2.testease.view.NamedSpinner
                     android:id="@+id/sample_rate"
                     android:name="Sample Rate (HZ)"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp" />
 
-                <com.netease.testease.view.NamedSpinner
+                <com.u2.testease.view.NamedSpinner
                     android:id="@+id/audio_bitrate"
                     android:name="Bitrate (kbps)"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp" />
 
-                <com.netease.testease.view.NamedSpinner
+                <com.u2.testease.view.NamedSpinner
                     android:id="@+id/aac_profile"
                     android:name="AAC Profile"
                     android:layout_width="wrap_content"

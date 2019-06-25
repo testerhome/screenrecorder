@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.netease.testease;
+package com.u2.testease;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -25,7 +25,6 @@ import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
-import android.graphics.drawable.Drawable;
 import android.media.MediaCodecInfo;
 import android.media.projection.MediaProjection;
 import android.media.projection.MediaProjectionManager;
@@ -48,16 +47,15 @@ import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.netease.testease.http.CoordinateServer;
-import com.netease.testease.util.AppUtils;
-import com.netease.testease.view.NamedSpinner;
+import com.u2.testease.R;
+import com.u2.testease.http.CoordinateServer;
+import com.u2.testease.view.NamedSpinner;
 
-import com.netease.testease.handler.CoorHandler;
-import com.netease.testease.view.FloatView;
+import com.u2.testease.handler.CoorHandler;
+import com.u2.testease.view.FloatView;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
