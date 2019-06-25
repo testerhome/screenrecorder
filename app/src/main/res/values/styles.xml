@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SelectButton" parent="@style/LeftTitle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_nor_down</item>
+    </style>
+
+    <style name="LeftTitle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/font</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+
+</resources>

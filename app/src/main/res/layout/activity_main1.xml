@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:weightSum="1.0">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/media_format_chooser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/video_setting"
+                style="@style/LeftTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Video_Encode"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <com.netease.testease.view.NamedSpinner
+                android:id="@+id/video_codec"
+                android:name="Video Encoder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:visibility="invisible" />
+
+            <com.netease.testease.view.NamedSpinner
+                android:id="@+id/resolution"
+                android:name="Resolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:entries="@array/video_resolutions"
+                android:visibility="invisible" />
+
+            <com.netease.testease.view.NamedSpinner
+                android:id="@+id/video_bitrate"
+                android:name="Bitrate (kbps)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:entries="@array/video_bitrates"
+                android:visibility="invisible" />
+
+            <com.netease.testease.view.NamedSpinner
+                android:id="@+id/framerate"
+                android:name="Frame Rate (fps)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:entries="@array/video_framerates"
+                android:visibility="invisible" />
+
+            <com.netease.testease.view.NamedSpinner
+                android:id="@+id/iframe_interval"
+                android:name="I-Frame Interval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:entries="@array/iframeintervals"
+                android:visibility="invisible" />
+
+            <com.netease.testease.view.NamedSpinner
+                android:id="@+id/avc_profile"
+                android:name="AVCProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:visibility="invisible" />
+
+            <com.netease.testease.view.NamedSpinner
+                android:id="@+id/orientation"
+                android:name="Orientation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:entries="@array/orientations"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/audio_format_chooser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/audio_setting"
+                    style="@style/LeftTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Audio_Encode"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <com.netease.testease.view.NamedSpinner
+                    android:id="@+id/audio_codec"
+                    android:name="Audio Encoder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:visibility="invisible" />
+
+                <com.netease.testease.view.NamedSpinner
+                    android:id="@+id/audio_channel_count"
+                    android:name="Channels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:entries="@array/audio_channels"
+                    android:visibility="invisible" />
+
+                <com.netease.testease.view.NamedSpinner
+                    android:id="@+id/sample_rate"
+                    android:name="Sample Rate (HZ)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:visibility="invisible" />
+
+                <com.netease.testease.view.NamedSpinner
+                    android:id="@+id/audio_bitrate"
+                    android:name="Bitrate (kbps)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:visibility="invisible" />
+
+                <com.netease.testease.view.NamedSpinner
+                    android:id="@+id/aac_profile"
+                    android:name="AAC Profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <Button
+            android:id="@+id/btn_setting_show"
+            style="@style/SelectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:width="0.0dip"
+            android:padding="10.0dip"
+            android:text="@string/setting_switch" />
+
+        <Button
+            android:id="@+id/record_button"
+            style="@style/SelectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:width="0.0dip"
+            android:padding="10.0dip"
+            android:text="@string/start_recorder" />
+    </LinearLayout>
+</LinearLayout>
